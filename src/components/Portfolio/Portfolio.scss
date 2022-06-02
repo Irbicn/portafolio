@@ -1,0 +1,91 @@
+.P > h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.Project.light{
+    box-shadow: var(--lbscolor) 0px 3px 8px;
+}
+@media (min-width: 900px){
+    .Portfolio{
+        width: 100%;
+        min-width: 900px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+.Project{
+    height: inherit;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 290px;
+    position: relative;
+}
+.Project.normal button{
+    background-color: var(--lbbg);
+    color: var(--lbcolor)
+}
+.Project .buttons{
+    display: flex;
+    column-gap: 10px;
+}
+.Project button{
+    border: none;
+    cursor: pointer;
+    padding: 3px 6px;
+}
+
+.Project > div{
+    padding: 10px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.Project img{
+    width: 140px;
+    height: 140px;
+}
+.Project .topics{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: flex;
+    column-gap: 10px;
+    max-width: 100px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    color: #fff;
+}
+.Project .topics > *{
+    padding: 3px 6px;
+}
+.Project .js{
+    background-color: #ffcc26;
+}
+.Project .html{
+    background-color: #ff4418;
+}
+.Project .css{
+    background-color: #156298;
+}
+.Project .react{
+    background-color: #20d1d8;
+}
+.Project .api{
+    background-color: #e6de95;
+}
+.Project .spa{
+    background-color: #e5e983;
+}
+.Project .wc{
+    background-color: #efca6d;
+}

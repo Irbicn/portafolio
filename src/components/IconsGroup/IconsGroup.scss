@@ -1,0 +1,15 @@
+.I-G{
+
+        width: fit-content;
+}
+@media (min-width: 900px){
+    .I-G{
+        display: grid;
+        row-gap: 8px;
+        height: fit-content;
+        position: fixed;
+        left: 30px;
+        top: calc(50% - 20px);
+        z-index: 3;
+    }
+}

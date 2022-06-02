@@ -1,0 +1,72 @@
+$lbg:#f3eae8;
+$lcolor: #123344;
+$lcolor2: #091a22;
+$lbbg: #00c6c3;
+$lbcolor: #fff;
+$lbhbg: #00a8a5;
+$lbscolor: #00c6c33e;
+$lbmode: #000;
+// Dark mode
+$dbg:#000;
+$dcolor: #184359;
+$dcolor2: #032535;
+$dbbg: #00c6c3;
+$dbscolor: #00c6c33e;
+$dbmode: #000;
+:root{
+    --lbscolor: #00c6c33e;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+}
+.App{
+    .SC-container{
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+.App.light{
+    background-color: $lbg;
+    h1,  h2, h3, h4, h5, h6{
+        color: $lcolor2;
+    }
+    p{
+        color: $lcolor;
+    }
+    button.mode.light{
+        color: $lbmode;
+        background-color: transparent;
+    }
+    .icon{
+        color: $lbbg;
+    }
+    button{
+        background-color: $lbbg;
+        color: $lbcolor;
+    }
+}
+.App.dark{
+    background-color: $dbg;
+    h1,  h2, h3, h4, h5, h6{
+        color: $dcolor2;
+    }
+    p{
+        color: $dcolor;
+    }
+    button.mode{
+        color: $dbmode;
+        background-color: transparent;
+    }
+    .icon{
+        color: $dbbg;
+    }
+    button{
+        background-color: $dbbg;
+        color: $lbcolor;
+    }
+}
